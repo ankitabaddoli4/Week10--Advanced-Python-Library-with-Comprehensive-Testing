@@ -1,1 +1,0 @@
-pytest -v --cov=my_advanced_lib
