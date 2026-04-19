@@ -3,11 +3,9 @@ import time
 
 
 # === DECORATORS ===
-
 class RetryError(Exception):
     """Raised when all retry attempts fail."""
     pass
-
 
 def retry(max_attempts=3):
     """Decorator that retries a function on failure."""
@@ -52,7 +50,6 @@ def timer(func):
 
 
 # === GENERATORS ===
-
 class DataPipeline:
     """Pipeline for processing data through multiple processors."""
     def __init__(self):
@@ -86,7 +83,6 @@ def fibonacci_generator():
 
 
 # === CONTEXT MANAGERS ===
-
 class SafeFileHandler:
     """Context manager for safe file handling."""
     def __init__(self, file_path, mode='r'):
